@@ -1,0 +1,611 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Sobre nós</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .logout-btn {
+    background: linear-gradient(135deg, #09cc7f, #1ed2ff);
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, rgb(179, 8, 8), rgb(228, 174, 74));
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.20);
+}
+
+.logout-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+    </style>
+    
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="logoGOTA.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top d-none d-lg-block">
+                    <div class="container-fluid">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left d-flex">
+                                    <ul></ul>
+                                    <ul>     
+                                        <li>Telefone: (88) 3303-12008</li>
+                                        <li>Email: recepcao.aracati@ifce.edu.br</li>
+                                    </ul>
+                                    <div class="header-social">    
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a  href="https://www.facebook.com/IfceAracati/?locale=pt_BR"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li> <a href="https://portal.ifce.edu.br/campus/aracati/"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-info-right d-flex align-items-center">
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select1">
+                                                    <option value="">Português (BR)</option>
+                                                    <option value="">English</option>
+                                                    <option value="">Deutsch</option>
+                                                    <option value="">Français</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="contact-now">     
+                                        <li><a href="contact.html">Se inscreva hoje</a></li>
+                                    </ul>
+
+                                    <button class="logout-btn" onclick="logout()" style="margin-left: 45px;">Logout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <h1 style="color: #1ed2ff"> Água e Vida </h1>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="index.html">Início</a></li>
+                                                <li><a href="about.html">Sobre nós</a></li>
+                                                <li><a href="program.html">Causas recentes</a></li>
+                                                <li><a href="events.html">Eventos sociais </a></li>
+                                                <li><a href="blog.html">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="quiz.html">Quiz</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contate-nos</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="events.html" class="btn header-btn">Doe para a nossa causa</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <!-- header end -->
+    <main>
+    <!--? Hero Start -->
+    <div class="slider-area2">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2 pt-20 text-center">
+                            <h2>Sobre nós</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+    <!--? Services Area Start -->
+    <div class="service-area section-padding30">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        <span style="color: #022F56;">O que estamos fazendo?</span>
+                        <h2>Um blog com o objetivo de conscientizar a sociedade sobre a água e os problemas hídricos do nosso planeta.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                         <img src="assets/img/gallery/icon.jpg" alt="Ícone representando a água potável" style="width: 90px; height: 90px; border-radius: 90%;">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="blog.html">Água potável</a></h5>
+                            <p>A água potável está se tornando escassa no mundo devido ao consumo excessivo e à contaminação dos recursos hídricos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cat active text-center mb-50">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/icon2.jpg" alt="Ícone representando poluição hídrica" style="width: 90px; height: 90px; border-radius: 90%;">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="blog.html">A poluição hídrica</a></h5>
+                            <p>A poluição da água por esgoto, lixo e químicos ameaça a vida aquática e a saúde humana.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <img src="assets/img/gallery/icon3.jpg" alt="Ícone representando poluição" style="width: 90px; height: 90px; border-radius: 90%;">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="blog.html">A sede ainda existe</a></h5>
+                            <p>Em regiões mais pobres do mundo, a falta de água potável compromete a saúde e a qualidade de vida da população.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Area End -->
+    <!--? About Law Start-->
+    <section class="about-low-area section-padding2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-10">
+                    <div class="about-caption mb-50">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-35">
+                            <span>Sobre nosso site</span>
+                            <h2>Projeto desenvolvido por alunos do Instituto Federal do Ceará. este blog tem como tema central a água e busca conscientizar a sociedade sobre a importância do seu uso sustentável.</h2>
+                        </div>
+                        <p> A água é um recurso natural, vital e fundamental, composta por H2O, essencial para a vida, sendo incolor insípida e inodora.</p>
+                        <p> O planeta possui vastos recursos hídricos, mas apenas uma pequena fração é água doce acessível, tornando a conservação e o uso consciente cruciais para a sustentabilidade e a saúde do planeta, que inclui o combate ao desperdício e a poluição.</p>
+                    </div>
+                    <a href="https://www.todamateria.com.br/agua/" class="btn" style="background-color:#1ed2ff;">Saiba mais</a>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <!-- about-img -->
+                    <div class="about-img ">
+                        <div class="about-font-img d-none d-lg-block">
+                            <img src="assets/img/gallery/about2.jpg" alt="Planeta submergindo na água" style="max-width: 500px; width: 100%; height: auto;">
+                        </div>
+                        <div class="about-back-img ">
+                            <img src="assets/img/gallery/about1.jpg" alt="Imagem de gota de água" style="max-width: 500px; width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Law End-->
+    <!-- Want To work -->
+    <section class="wantToWork-area ">
+        <div class="container">
+            <div class="wants-wrapper w-padding2  section-bg" data-background="assets/img/gallery/section_bg01.jpg">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-5 col-lg-9 col-md-8">
+                        <div class="wantToWork-caption wantToWork-caption2">
+                            <h2>Vamos mudar o mundo com humanidade</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4">
+                        <a href="https://maisagua.social/voluntariado/" class="btn white-btn f-right sm-left" style="background-color:#1ed2ff;">Torne-se um voluntário</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Want To work End -->
+    <!--? Testimonial Start -->
+    <div class="testimonial-area testimonial-padding">
+        <div class="container">
+            <!-- Testimonial contents -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="h1-testimonial-active dot-style">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial4.jpg" alt="Foto do desenvolvedor" style="max-width: 150px; width: 80%; height: 150px; border-radius: 50%;">
+                                        <span>Emanuel Rocha</span>
+                                        <p>Integrante da Equipe</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>Responsável pela construção da página principal do site, além de implementar melhorias no HTML e CSS. Também auxiliou no desenvolvimento de outros elementos e páginas paralelas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial7.jpg" alt="Foto do desenvolvedor" style="max-width: 150px; width: 80%; height: 150px; border-radius: 50%;">
+                                        <span>Gabriel Antunes</span>
+                                        <p>Integrante da Equipe</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>Responsável, majoritariamente, pelo desenvolvimento da página "Blog".</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial3.jpg" alt="Foto do desenvolvedor" style="max-width: 150px; width: 80%; height: 150px; border-radius: 50%;">
+                                        <span>Júlia Emily</span>
+                                        <p>Integrante da Equipe</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>Responsável pelo desenvolvimento da página "Eventos sociais". Incluiu links de ONGs e projetos sociais como forma de mostrar apoio à causa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial2.jpg" alt="Foto do desenvolvedor" style="max-width: 150px; width: 80%; height: 150px; border-radius: 50%;" >
+                                        <span>Miguel Braga</span>
+                                        <p>Integrante da Equipe</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>Responsável pelo desenvolvimento da página "Contate-nos". Além de contribuir para outros aspectos do site.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial5.jpg" alt="Foto do desenvolvedor" style="max-width: 150px; width: 80%; height: 150px; border-radius: 50%;" >
+                                        <span>Raira Alves</span>
+                                        <p>Integrante da Equipe</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>Responsável, majoritariamente, pelo desenvolvimento da página "Sobre nós". Além disso, também contribuiu para a construção de outros elementos do Blog.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial1.jpg" alt="Foto do desenvolvedor" style="max-width: 150px; width: 80%; height: 150px; border-radius: 50%;">
+                                        <span>Sofia Dutra</span>
+                                        <p>Integrante da Equipe</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>Responsável pelo desenvolvimento da página "Contate-nos", pela implementação de um mapa da cidade e por disponibilizar informações para contato.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial.6.jpg" alt="Foto do desenvolvedor" style="max-width: 150px; width: 80%; height: 150px; border-radius: 50%;">
+                                        <span>Suzane Mendes</span>
+                                        <p>Integrante da Equipe</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>Responsável, majoritariamente, pelo desenvolvimento da página "Blog".</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!--? Count Down Start -->
+    <div class="count-down-area pt-25 section-bg" data-background="assets/img/gallery/section_bg02.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12">
+                    <div class="count-down-wrapper" >
+                        <div class="row justify-content-between">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">33,000,000</span>
+                                    <span class="plus">+</span>
+                                    <p class="color-green" style="color: #212529">De brasileiros não tem acesso à água potável</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">97.5</span>
+                                    <span class="plus">%</span>
+                                    <p class="color-green" style="color: #212529">Da água do mundo é salgada</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">2.5</span>
+                                    <span class="plus">%</span>
+                                    <p class="color-green" style="color: #212529">Da água do mundo é doce</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">69</span>
+                                    <span class="plus">%</span>
+                                    <p class="color-green" style="color: #212529">Da água doce é de difícil acesso, pois está concentrada nas geleiras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Count Down End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer_bg.png">
+            <!-- Footer Top-->
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <div class="footer-tittle">
+                                    <div class="footer-logo mb-20">
+                                        <a href="index.html"><img src="logoGOTA3.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Informações de Contato</h4>
+                                    <ul>
+                                        <li>
+                                            <p>Endereço: Conj. Hab. Dr. Abelardo Filho, Aracati - CE, 62800-000</p>
+                                        </li>
+                                        <li><a href="#">Número de Telefone: (88) 3303-1200</a></li>
+                                        <li><a href="#">Email: recepcao.aracati@ifce.edu.br</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Links Importantes</h4>
+                                    <ul>
+                                        <li><a href="blog.html"> Visualize o projeto</a></li>
+                                        <li><a href="contact.html">Contate-nos</a></li>
+                                        <li><a href="about.html">Desenvolvedores</a></li>
+                                        <li><a href="#">Propriedades</a></li>
+                                        <li><a href="contact.html">Suporte Técnico</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Newsletter</h4>
+                                    <div class="footer-pera footer-pera2">
+                                    <p>A água é um bem precioso; use com reverência e sabedoria</p>
+                                </div>
+                                <!-- Form -->
+                                <div class="footer-form" >
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                        method="get" class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Endereço de E-mail"
+                                            class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = ' Email Address '">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                class="email_icon newsletter-submit button-contactForm"><img src="assets/img/gallery/form.png" alt=""></button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-bottom -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-xl-10 col-lg-9 ">
+                                <div class="footer-copy-right">
+                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="footer-social f-right">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+function logout() {
+    localStorage.removeItem("logado");
+    window.location.href = "login.html";
+}
+</script>
+    
+    </body>
+</html>

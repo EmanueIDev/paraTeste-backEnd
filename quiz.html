@@ -1,0 +1,379 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Água | Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script>
+        // Impede acesso sem login
+        if (localStorage.getItem("logado") !== "true") {
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <style>
+        .logout-btn {
+            background: linear-gradient(135deg, #09cc7f, #1ed2ff);
+            color: white;
+            padding: 10px 20px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .logout-btn:hover {
+            background: linear-gradient(135deg, rgb(179, 8, 8), rgb(228, 174, 74));
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.20);
+        }
+
+        .quiz-question {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 5px solid #1ed2ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Preloader Start -->
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="logoGOTA.webp" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Preloader End -->
+
+<header>
+    <div class="header-area">
+        <div class="main-header ">
+            <div class="header-top d-none d-lg-block">
+                <div class="container-fluid">
+                    <div class="col-xl-12">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="header-info-left d-flex">
+                                <ul>
+                                    <li>Telefone: (88) 3303-1200</li>
+                                    <li>Email: recepcao.aracati@ifce.edu.br</li>
+                                </ul>
+                                <div class="header-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/IfceAracati/?locale=pt_BR"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://ifce.edu.br/aracati"><i class="fab fa-google-plus-g"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header-info-right d-flex align-items-center">
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select1">
+                                                    <option value="">Português (BR)</option>
+                                                    <option value="">English</option>
+                                                    <option value="">Deutsch</option>
+                                                    <option value="">Français</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="contact-now">     
+                                        <li><a href="contact.html">Se inscreva hoje</a></li>
+                                    </ul>
+
+                                    <button class="logout-btn" onclick="logout()" style="margin-left: 45px;">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <h1 style="color: #1ed2ff">Água e Vida</h1>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-10 col-lg-10">
+                            <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">Início</a></li>
+                                            <li><a href="about.html">Sobre nós</a></li>
+                                            <li><a href="program.html">Causas recentes</a></li>
+                                            <li><a href="events.html">Eventos sociais</a></li>
+                                            <li><a href="blog.html">Blog</a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="quiz.html">Quiz</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">Contate-nos</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div class="header-right-btn d-none d-lg-block ml-20">
+                                    <a href="contact.html" class="btn header-btn">Doe para a nossa causa</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <!-- Hero -->
+    <div class="slider-area2">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="hero-cap hero-cap2 pt-20 text-center">
+                    <h2>Quiz da Sustentabilidade</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUIZ -->
+    <section class="contact-section">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 style="font-weight: bold;">Quiz sobre Água e Sustentabilidade</h2>
+                <p>Responda as 10 perguntas abaixo e teste seus conhecimentos!</p>
+            </div>
+
+            <div class="col-lg-10 mx-auto">
+                <form id="quizForm">
+
+                    <!-- Perguntas -->
+                    <div class="quiz-question">
+                        <h4>1. Qual é a maior fonte de água doce do planeta?</h4>
+                        <label><input type="radio" name="q1" value="D"> Gelo e geleiras</label><br>
+                        <label><input type="radio" name="q1" value="C"> Aquíferos</label><br>
+                        <label><input type="radio" name="q1" value="A"> Lagos</label><br>
+                        <label><input type="radio" name="q1" value="B"> Rios</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>2. Qual dos itens abaixo mais desperdiça água nas casas?</h4>
+                        <label><input type="radio" name="q2" value="B"> Vazamentos</label><br>
+                        <label><input type="radio" name="q2" value="A"> Banho demorado</label><br>
+                        <label><input type="radio" name="q2" value="C"> Lavar louça</label><br>
+                        <label><input type="radio" name="q2" value="D"> Lavar roupas</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>3. O que é um aquífero?</h4>
+                        <label><input type="radio" name="q3" value="B"> Reservatório natural de água subterrânea</label><br>
+                        <label><input type="radio" name="q3" value="A"> Lago subterrâneo</label><br>
+                        <label><input type="radio" name="q3" value="C"> Estação de tratamento</label><br>
+                        <label><input type="radio" name="q3" value="D"> Nascente artificial</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>4. Qual ação mais ajuda na economia de água?</h4>
+                        <label><input type="radio" name="q4" value="A"> Fechar a torneira ao escovar os dentes</label><br>
+                        <label><input type="radio" name="q4" value="B"> Lavar carro com mangueira</label><br>
+                        <label><input type="radio" name="q4" value="C"> Banho de 20 minutos</label><br>
+                        <label><input type="radio" name="q4" value="D"> Lavar calçadas com jatos</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>5. O que é pegada hídrica?</h4>
+                        <label><input type="radio" name="q5" value="A"> Água usada para produzir itens</label><br>
+                        <label><input type="radio" name="q5" value="B"> Tamanho de reservatórios</label><br>
+                        <label><input type="radio" name="q5" value="C"> Volume tratado</label><br>
+                        <label><input type="radio" name="q5" value="D"> Índice de chuvas</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>6. Qual destes problemas é causado pela poluição da água?</h4>
+                        <label><input type="radio" name="q6" value="A"> Eutrofização</label><br>
+                        <label><input type="radio" name="q6" value="B"> Desmatamento</label><br>
+                        <label><input type="radio" name="q6" value="C"> Erosão</label><br>
+                        <label><input type="radio" name="q6" value="D"> Chuva ácida</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>7. Quanto do corpo humano é composto por água?</h4>
+                        <label><input type="radio" name="q7" value="C"> 60%</label><br>
+                        <label><input type="radio" name="q7" value="A"> 10%</label><br>
+                        <label><input type="radio" name="q7" value="B"> 30%</label><br>
+                        <label><input type="radio" name="q7" value="D"> 90%</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>8. Principal causa da escassez de água:</h4>
+                        <label><input type="radio" name="q8" value="B"> Poluição e desperdício</label><br>
+                        <label><input type="radio" name="q8" value="A"> Uso responsável</label><br>
+                        <label><input type="radio" name="q8" value="C"> População</label><br>
+                        <label><input type="radio" name="q8" value="D"> Fim dos rios</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>9. A água dos oceanos é potável?</h4>
+                        <label><input type="radio" name="q9" value="B"> Não</label><br>
+                        <label><input type="radio" name="q9" value="A"> Sim</label><br>
+                        <label><input type="radio" name="q9" value="C"> Com filtragem simples</label><br>
+                        <label><input type="radio" name="q9" value="D"> Apenas no frio</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>10. O que mantém rios saudáveis?</h4>
+                        <label><input type="radio" name="q10" value="B"> Proteger matas ciliares</label><br>
+                        <label><input type="radio" name="q10" value="A"> Jogar lixo nas margens</label><br>
+                        <label><input type="radio" name="q10" value="C"> Aumentar uso industrial</label><br>
+                        <label><input type="radio" name="q10" value="D"> Canalizar rios</label>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="button" onclick="corrigirQuiz()" class="button button-contactForm boxed-btn">
+                            Enviar Respostas
+                        </button>
+                    </div>
+
+                    <h3 id="resultadoQuiz" class="text-center mt-4" style="font-weight: bold;"></h3>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <!-- Seu footer completo permanece igual -->
+</footer>
+
+<!-- Scroll Up -->
+<div id="back-top">
+    <a href="#"><i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS -->
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+<script>
+function logout() {
+    localStorage.removeItem("logado");
+    window.location.href = "login.html";
+}
+
+function corrigirQuiz() {
+    const respostas = {
+        q1: "D",
+        q2: "B",
+        q3: "B",
+        q4: "A",
+        q5: "A",
+        q6: "A",
+        q7: "C",
+        q8: "B",
+        q9: "B",
+        q10: "B"
+    };
+
+    let pontos = 0;
+    let erros = [];
+
+    for (let q in respostas) {
+        const marcada = document.querySelector(`input[name="${q}"]:checked`);
+        
+        if (marcada) {
+            if (marcada.value === respostas[q]) {
+                pontos++;
+            } else {
+                erros.push({
+                    pergunta: q.replace("q", ""),
+                    correta: respostas[q]
+                });
+            }
+        } else {
+            erros.push({
+                pergunta: q.replace("q", ""),
+                correta: respostas[q]
+            });
+        }
+    }
+
+    // Exibir pontuação
+    let resultadoHTML = `
+        Você acertou <span style="color:#1ed2ff">${pontos}</span> de 10 perguntas!
+        <br><br>
+    `;
+
+    // Lista de erros
+    if (erros.length > 0) {
+        resultadoHTML += `<h4>Questões erradas:</h4><ul style="text-align: left; display: inline-block;">`;
+
+        erros.forEach(e => {
+            resultadoHTML += `
+                <li>
+                    ❌ Questão ${e.pergunta} — resposta correta: 
+                    <strong>${e.correta}</strong>
+                </li>
+            `;
+        });
+
+        resultadoHTML += `</ul>`;
+    } else {
+        resultadoHTML += `<h4 style="color:green;">Parabéns! Você acertou tudo! 🎉</h4>`;
+    }
+
+    document.getElementById("resultadoQuiz").innerHTML = resultadoHTML;
+}
+</script>
+
+</body>
+</html>

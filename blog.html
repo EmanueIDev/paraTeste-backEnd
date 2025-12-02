@@ -1,0 +1,602 @@
+'<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Preservação da Água Potável</title>
+    <meta name="Como a água pode ser preservada no nosso Meio-ambiente" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script>
+    // Impede acesso sem login
+    if (localStorage.getItem("logado") !== "true") {
+        window.location.href = "login.html";
+    }
+</script>
+
+<style>
+        .logout-btn {
+    background: linear-gradient(135deg, #09cc7f, #1ed2ff);
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, rgb(179, 8, 8), rgb(228, 174, 74));
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.20);
+}
+
+.logout-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+    </style>
+    
+
+</head>
+<body>
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="logoGOTA.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top d-none d-lg-block">
+                    <div class="container-fluid">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left d-flex">
+                                    <ul>     
+                                        <li>Telefone: (88) 3303-1200</li>
+                                        <li>Email: recepcao.aracati@ifce.edu.br</li>
+                                    </ul>
+                                    <div class="header-social">    
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-info-right d-flex align-items-center">
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select1">
+                                                    <option value="">Português (BR)</option>
+                                                    <option value="">English</option>
+                                                    <option value="">Deutsch</option>
+                                                    <option value="">Français</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="contact-now">     
+                                        <li><a href="contact.html">Se inscreva hoje</a></li>
+                                    </ul>
+
+                                    <button class="logout-btn" onclick="logout()" style="margin-left: 45px;">Logout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <h1 style="color: #1ed2ff"> Água e Vida </h1>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="index.html">Início</a></li>
+                                                <li><a href="about.html">Sobre nós</a></li>
+                                                <li><a href="program.html">Causas recentes</a></li>
+                                                <li><a href="events.html">Eventos sociais </a></li>
+                                                <li><a href="blog.html">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="quiz.html">Quiz</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contate-nos</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="contact.html" class="btn header-btn">Doe para a nossa causa</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        <!--? Hero Start -->
+        <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70 text-center">
+                                <h2>Blog</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <!--? Blog Area Start-->
+        <section class="blog_area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mb-5 mb-lg-0">
+                        <div class="blog_left_sidebar">
+                            <article class="blog_item">
+                                <div class="blog_item_img" id="AguaCot">
+                                    <img class="card-img rounded-0" src="Agua.jpg" alt="">
+                                    <a href="#" class="blog_item_date">
+                                        
+                                    </a>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Água e o seu Uso no Cotidiano </h2>
+                                    </a>
+                                    <p>A Água é um recurso essencial para diversos setores da sociedade brasileira e do mundo inteiro, sendo utilizada principalmente para a irrigação de lavouras,
+                                        o abastecimento humano (urbano e rural), as atividades industriais, 
+                                        a geração de energia elétrica, a extração mineral, a aquicultura, a navegação, o turismo, o lazer e outras atividades como: Cozinhar, lavar a louça, 
+                                        irrigação de plantas, e outras atividades, mostrando ter um papel importante para a vida humana e gerações futuras. </p>
+                                    <ul class="blog-info-link">
+                                       
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img" id="criseAg">
+                                    <img class="card-img rounded-0" src="crise.agua.jpg" alt="">
+                                    <a href="#" class="blog_item_date">
+                                        
+                                    </a>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;"> Crise Global da Água </h2>
+                                    </a>
+                                    <p> A crise global da água é a escassez e a má distribuição da água potável no mundo, agravada pela poluição, desperdício e mudanças climáticas. 
+                                        Milhões de pessoas vivem sem acesso à água limpa, o que causa doenças e impacta a produção de alimentos. O crescimento populacional e 
+                                        a má gestão intensificam o problema. Soluções incluem uso consciente, tratamento da água, preservação ambiental e investimento em infraestrutura.</p>
+                                    <ul class="blog-info-link">
+                                       
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img" id="GtAg">
+                                    <img class="card-img rounded-0" src="Cagece.jpg" alt="">
+                                    <a href="#" class="blog_item_date">
+                                        
+                                    </a>
+                                </div>
+                                <div class="blog_details" >
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;"> Gestão das Águas e esgoto (CAGECE) </h2>
+                                    </a>
+                                    <p> A CAGECE (Companhia de Água e Esgoto do Ceará) é a empresa responsável pela gestão dos serviços de abastecimento de água e tratamento de esgoto no estado do Ceará. 
+                                        Ela atua captando, tratando e distribuindo água potável, além de coletar e tratar o esgoto para garantir a 
+                                        saúde pública e a preservação do meio ambiente. A empresa também desenvolve projetos de educação ambiental, combate ao desperdício e 
+                                        ampliação do acesso ao saneamento básico em áreas urbanas e rurais. Seu objetivo é oferecer serviços de qualidade com sustentabilidade e eficiência.</p>
+                                    <ul class="blog-info-link">   
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img" id="asfp">
+                                    <img class="card-img rounded-0" src="poluicao-da-agua-810x477-1.jpg" alt="">
+                                    <a href="#" class="blog_item_date">    
+                                    </a>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Água e suas fontes de Poluição</h2>
+                                    </a>
+                                    <p> As principais fontes de poluição da água incluem o esgoto doméstico, resíduos industriais, 
+                                        agrotóxicos, lixo urbano, derramamento de óleo e o desmatamento, que contribui para a erosão e o assoreamento dos rios. 
+                                        Essas poluições contaminam rios, lagos e aquíferos, trazendo consequências graves, como o surgimento de doenças, morte da vida aquática, escassez de água potável, 
+                                        desequilíbrio dos ecossistemas e impactos na agricultura e economia. A poluição da água ameaça tanto o meio ambiente quanto a saúde humana. </p>
+                                    <ul class="blog-info-link">
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img" id="Dicaspr">
+                                    <img class="card-img rounded-0" src="preservativo.webp" alt="">
+                                    <a href="#" class="blog_item_date">
+                                      
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="blog_details.html">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Como podemos preserva-lá</h2>
+                                    </a>
+                                    <p> Sendo a Água um recurso tão importante para nossa humanidade e presente em nosso cotidiano e em várias tarefas, 
+                                        deve ser constantemente usada de forma consciente. Aqui estão as formas de como podemos preserva-lá:</p>
+                                    
+                                        <p>1- Reduzir o tempo de banho.</p>
+                                        <p>2- Desligar a torneira ao escovar os dentes ou quando lavar a louça.</p>
+                                        <p>3- Usar a  máquina de lavar roupas sempre com a capacidade máxima. </p>
+                                        <p>4- Verificar e corrigir vazamentos e goteiras, que representam um desperdício.</p>
+                                        <p>5- Verifique e corrija vazamentos e goteiras, que representam um desperdício.</p> 
+                                        <p>6- Use a água da máquina de lavar para limpar pisos, e a água da chuva para regar plantas e lavar áreas externas.</p> 
+                                        <p>7-  Não jogue lixo, plástico ou óleo em rios e outros corpos d'água.</p>
+                                    
+                                        <p>Seguir esses passos e conscientizar outras pessoas sobre, pode ajudar na conscientização sobre o Desperdício da 
+                                        Água e como preservar o nosso meio-ambiente.</p>
+                                    <ul class="blog-info-link">
+                                      
+                                    </ul>
+                                </div>
+                            </article>
+                            <nav class="blog-pagination justify-content-center d-flex">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a href="#" class="page-link" aria-label="Previous">
+                                            <i class="ti-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="#" class="page-link" aria-label="Next">
+                                            <i class="ti-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget search_widget">
+                                <form action="#">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder='Search Keyword'
+                                                onfocus="this.placeholder = ''"
+                                                onblur="this.placeholder = 'Search Keyword'">
+                                            <div class="input-group-append">
+                                                <button class="btns" type="button"><i class="ti-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                        type="submit">Search</button>
+                                </form>
+                            </aside>
+                            <aside class="single_sidebar_widget post_category_widget">
+                                <h4 class="widget_title" style="color: #2d2d2d;">Tópicos</h4>
+                                <ul class="list cat-list">
+                                    <li>
+                                        <a href="#AguaCot" class="d-flex">
+                                            <p>Uso no cotidiano</p>
+                                            
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#criseAg" class="d-flex">
+                                            <p>Crise global</p>
+                                            
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#GtAg" class="d-flex">
+                                            <p>Gestão da água</p>
+                                          
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#asfp" class="d-flex">
+                                            <p>Fontes de poluição</p>
+                                           
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#Dicaspr" class="d-flex">
+                                            <p>Dicas para preservar</p>
+                                            
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </aside>
+                            <aside class="single_sidebar_widget popular_post_widget">
+                                <h3 class="widget_title" style="color: #2d2d2d;">Notícias recentes</h3>
+                                <div class="media post_item">
+                                    <img src="assets/img/post/post_1.jpeg" alt="post" style="max-width: 80px; width: 80%; height: 80px;">
+                                    <div class="media-body">
+                                        <a href="https://www.gov.br/secom/pt-br/assuntos/noticias/2025/03/dia-mundial-da-agua-governo-federal-avanca-em-obras-e-politicas-para-seguranca-hidrica">
+                                            <h3 style="color: #2d2d2d;">Governo Federal avança em obras e políticas para segurança hídrica...</h3>
+                                        </a>
+                                        <p>21 de Março de 2025</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="assets/img/post/post_2.webp" alt="post" style="max-width: 80px; width: 80%; height: 80px;">
+                                    <div class="media-body">
+                                        <a href="https://agenciabrasil.ebc.com.br/geral/noticia/2024-03/falta-de-acesso-agua-potavel-atinge-33-milhoes-de-pessoas-no-brasil">
+                                            <h3 style="color: #2d2d2d;">Falta de acesso à água potável atinge 33 milhões de pessoas no Brasil</h3>
+                                        </a>
+                                        <p>22 de Março de 2024</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="assets/img/post/post_3.webp" alt="post" style="max-width: 80px; width: 80%; height: 80px;">
+                                    <div class="media-body">
+                                        <a href="https://www.cnnbrasil.com.br/tecnologia/poluentes-emergentes-agravam-crise-hidrica-nos-paises-em-desenvolvimento/">
+                                            <h3 style="color: #2d2d2d;">Poluentes emergentes agravam crise hídrica nos países em desenvolvimento</h3>
+                                        </a>
+                                        <p>30 de Abril de 2025</p>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="assets/img/post/post_4.webp" alt="post" style="max-width: 80px; width: 80%; height: 80px;">
+                                    <div class="media-body">
+                                        <a href="https://www.cnnbrasil.com.br/tecnologia/ciclo-global-da-agua-esta-desregulado-pela-primeira-vez-na-historia-entenda/">
+                                            <h3 style="color: #2d2d2d;">Ciclo global da água está desregulado pela primeira vez na história</h3>
+                                        </a>
+                                        <p>12 de Março de 2025</p>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="single_sidebar_widget tag_cloud_widget">
+                                <h4 class="widget_title" style="color: #2d2d2d;">Tópicos</h4>
+                                <ul class="list">
+                                    <li>
+                                        <a href="https://hidrosconsultoria.com.br/porque-despoluir-rios-e-dificil-e-como-isso-afeta-a-sociedade/?gad_source=1&gad_campaignid=22574396340&gbraid=0AAAAADgcHquc2dH_aNeo5WhS-WbiMptK5&gclid=EAIaIQobChMIjeTO4ZO1kAMVPmdIAB1eTDT2EAAYASAAEgKid_D_BwE">Não polua</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://abraceoplaneta.com.br/agua/consumo-consciente/">Descarga consciente</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cacavazamentolg.com.br/reparos#reparo-de-vazamentos">Conserte vazamentos </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ihoffmann.com.br/blog/limpeza-de-caixa-dagua-veja-como-fazer/">Limpeza</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://agergs.rs.gov.br/dica-do-dia-conheca-algumas-maneiras-de-economizar-agua-e-ajudar-o-meio-ambiente">Economizar na hora do banho</a>
+                                    </li>
+                        
+    
+                                </ul>
+                            </aside>                           
+                            <aside class="single_sidebar_widget newsletter_widget">
+                                <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                                    </div>
+                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                        type="submit">Subscribe</button>
+                                </form>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer_bg.png">
+            <!-- Footer Top-->
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <div class="footer-tittle">
+                                    <div class="footer-logo mb-20">
+                                        <a href="index.html"><img src="logoGOTA3.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Informações para contato</h4>
+                                    <ul>
+                                        <li>
+                                            <p>Endereço: CE-040, Km 137 - 1 s/n Aeroporto - Conj. Hab. Dr. Abelardo Filho, Aracati - CE, 62800-000</p>
+                                        </li>
+                                        <li><a href="#">Telefone: (88) 3303-1200</a></li>
+                                        <li><a href="#">Email: recepcao.aracati@ifce.edu.br</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Links Importantes</h4>
+                                    <ul>
+                                        <li><a href="#"> View Project</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Testimonial</a></li>
+                                        <li><a href="#">Proparties</a></li>
+                                        <li><a href="#">Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Contribuição</h4>
+                                    <div class="footer-pera footer-pera2">
+                                    <p>Esta com dúvidas? Envie para que possamos esclarecer.</p>
+                                </div>
+                                <!-- Form -->
+                                <div class="footer-form" >
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                        method="get" class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
+                                            class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = ' Email Address '">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                class="email_icon newsletter-submit button-contactForm"><img src="assets/img/gallery/form.png" alt=""></button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-bottom -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-xl-10 col-lg-9 ">
+                                <div class="footer-copy-right">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="footer-social f-right">
+                                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                                    <a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.google.com/?hl=pt_BR&zx=1761044696027&no_sw_cr=1"><i class="fas fa-globe"></i></a>
+                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+      <!-- JS here -->
+
+      <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+      <!-- Jquery, Popper, Bootstrap -->
+      <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+      <script src="./assets/js/popper.min.js"></script>
+      <script src="./assets/js/bootstrap.min.js"></script>
+      <!-- Jquery Mobile Menu -->
+      <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+      <!-- Jquery Slick , Owl-Carousel Plugins -->
+      <script src="./assets/js/owl.carousel.min.js"></script>
+      <script src="./assets/js/slick.min.js"></script>
+      <!-- One Page, Animated-HeadLin -->
+      <script src="./assets/js/wow.min.js"></script>
+      <script src="./assets/js/animated.headline.js"></script>
+      <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+      <!-- Date Picker -->
+      <script src="./assets/js/gijgo.min.js"></script>
+      <!-- Nice-select, sticky -->
+      <script src="./assets/js/jquery.nice-select.min.js"></script>
+      <script src="./assets/js/jquery.sticky.js"></script>
+      
+      <!-- counter , waypoint,Hover Direction -->
+      <script src="./assets/js/jquery.counterup.min.js"></script>
+      <script src="./assets/js/waypoints.min.js"></script>
+      <script src="./assets/js/jquery.countdown.min.js"></script>
+      <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+      <!-- contact js -->
+      <script src="./assets/js/contact.js"></script>
+      <script src="./assets/js/jquery.form.js"></script>
+      <script src="./assets/js/jquery.validate.min.js"></script>
+      <script src="./assets/js/mail-script.js"></script>
+      <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+      
+      <!-- Jquery Plugins, main Jquery -->	
+      <script src="./assets/js/plugins.js"></script>
+      <script src="./assets/js/main.js"></script>
+
+      <script>
+function logout() {
+    localStorage.removeItem("logado");
+    window.location.href = "login.html";
+}
+</script>
+     
+    </body>
+</html>

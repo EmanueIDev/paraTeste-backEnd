@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroTeste</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1ed2ff;
+            font-family: Arial, sans-serif;
+            background-image: url(loginBACK2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 35px;
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #09cc7f;
+            font-weight: 700;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #09cc7f;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #1ed2ff;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        .login-btn {
+            background: #1ed2ff;
+            color: white;
+        }
+
+        .login-btn:hover {
+            background: #0bbce6;
+        }
+
+        .logout-btn {
+            background: #09cc7f;
+            color: white;
+        }
+
+        .logout-btn:hover {
+            background: #05a162;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+
+        <form method="POST" action="backend/cadastro.php">
+    <input type="text" name="nome" placeholder="Digite seu nome">
+    <input type="password" name="senha" placeholder="Digite sua senha">
+    <input type="password" name="confirmar" placeholder="Confirme sua senha">
+    <button type="submit">Cadastrar</button>
+</form>
+
+        <p><a href="login.html">Já sou cadastrado</a></p>
+
+        
+    </div>
+
+    <script>
+async function login() {
+    const nome = document.getElementById("nome").value;
+    const senha = document.getElementById("senha").value;
+    const confirmar = document.getElementById("confirmar").value;
+
+    if (!nome || !senha || !confirmar) {
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+    if (senha !== confirmar) {
+        alert("As senhas não coincidem!");
+        return;
+    }
+
+    const dados = new FormData();
+    dados.append("nome", nome);
+    dados.append("senha", senha);
+
+    const req = await fetch("backend/register.php", {
+        method: "POST",
+        body: dados
+    });
+
+    const res = await req.text();
+
+    if (res === "OK") {
+        alert("Cadastro realizado com sucesso!");
+        window.location.href = "login.html";
+    } else if (res === "EXISTE") {
+        alert("Esse nome já está cadastrado!");
+    } else {
+        alert("Erro ao cadastrar.");
+    }
+}
+
+
+    function login() {
+        const nome = document.getElementById("nome").value;
+        const senha = document.getElementById("senha").value;
+        const confirmar = document.getElementById("confirmar").value;
+
+        if (!nome || !senha || !confirmar) {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        if (senha !== confirmar) {
+            alert("As senhas não coincidem!");
+            return;
+        }
+
+        // Marca que está logado
+        localStorage.setItem("logado", "true");
+
+        // Redireciona para página inicial (ajuste se for outro nome)
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>

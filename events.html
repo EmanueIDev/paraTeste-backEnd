@@ -1,0 +1,504 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Água | Eventos Sociais </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .logout-btn {
+    background: linear-gradient(135deg, #09cc7f, #1ed2ff);
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /* sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.logout-btn:hover {
+    background: linear-gradient(135deg, rgb(179, 8, 8), rgb(228, 174, 74));
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.20);
+}
+
+.logout-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+    </style>
+    
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="logoGOTA.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-top d-none d-lg-block">
+                    <div class="container-fluid">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left d-flex">
+                                    <ul>     
+                                        <li>Telefone: (88) 3303-12008</li>
+                                        <li>Email: recepcao.aracati@ifce.edu.br</li>
+                                    </ul>
+                                    <div class="header-social">    
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-info-right d-flex align-items-center">
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select1">
+                                                    <option value="">Português (BR)</option>
+                                                    <option value="">English</option>
+                                                    <option value="">Deutsch</option>
+                                                    <option value="">Français</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="contact-now">     
+                                        <li><a href="contact.html">Se inscreva hoje</a></li>
+                                    </ul>
+
+                                    <button class="logout-btn" onclick="logout()" style="margin-left: 45px;">Logout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <h1 style="color: #1ed2ff"> Água e Vida </h1>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="index.html">Início</a></li>
+                                                <li><a href="about.html">Sobre nós</a></li>
+                                                <li><a href="program.html">Causas recentes</a></li>
+                                                <li><a href="events.html">Eventos sociais </a></li>
+                                                <li><a href="blog.html">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="quiz.html">Quiz</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="contact.html">Contate-nos</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a href="contact.html" class="btn header-btn">Doe para a nossa causa</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <!-- header end -->
+    <main>
+    <!--? Hero Start -->
+    <div class="slider-area2">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2 pt-20 text-center">
+                            <h2> Eventos Sociais </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+    <!--? Count Down Start -->
+    <div class="count-down-area pt-25 section-bg" data-background="assets/img/gallery/section_bg02.jpg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12">
+                    <div class="count-down-wrapper" >
+                        <div class="row justify-content-between">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">25</span>
+                                    <span class="plus">%</span>
+                                    <p class="color-green" style="color: #212529">da população mundial não tem acesso a água potável</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">15</span>
+                                    <span class="plus">%</span>
+                                    <p class="color-green" style="color: #212529">dos brasileiros sem água acessível</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">100</span>
+                                    <span class="plus">+</span>
+                                  <p class="color-green" style="color: #212529">mais de 100 ONGs fazem manifesto em defesa das águas</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">47</span>
+                                    <span class="plus">%</span>
+                                    <p class="color-green" style="color: #212529">sem rede de esgoto alcançável</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Count Down End -->
+    <!-- Featured_job_start -->
+    <section class="featured-job-area section-padding30 section-bg2" data-background="assets/img/gallery/section_bg03.pnj">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 col-md-10 col-sm-12">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        <span>Junte-se à essa causa!</span>
+ <h2>Alguns eventos sobre a conscientização da água</h2>
+<div class="row justify-content-center">
+    <div class=" mb-4">
+        <!-- single-job-content -->
+        <div class="single-job-items mb-30">
+            <div class="job-items d-flex align-items-center">
+                <div class="company-img" style="flex-shrink: 0;">
+                    <a href="#"><img src="waterorg.jpg" alt="" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;"></a>
+                </div>
+                <div class="job-tittle" style="margin-left: 20px;">
+                    <a href="https://water.org/about-us/ways-donate/"><h4>Water.org: Uma instituição de caridade</h4></a>
+                    <ul>
+                          <li>donorcare@water.org</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Kansas City - MO (EUA)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <!-- single-job-content -->
+        <div class="single-job-items mb-30">
+            <div class="job-items d-flex align-items-center">
+                <div class="company-img" style="flex-shrink: 0;">
+                    <a href="#"><img src="institutobrotar.png" alt="" style="width: 178px; height: 174px"></a>
+                </div>
+                <div class="job-tittle" style="margin-left: 20px;">
+                   <a href="https://institutobrotar.org.br/?gad_source=1&gad_campaignid=22435173483&gbraid=0AAAAACln2RoBEtzq3HXMgI9aG0ypnd9Po&gclid=EAIaIQobChMIqsOBioOhkAMV3GtIAB17bhuiEAAYASAAEgJMOfD_BwE"><h4>Instituto Brotar - ONG Ceará</h4></a>
+                    <ul>
+                        <li>contato@institutobrotar@org.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Tabuleiro do Norte - CE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <!-- single-job-content -->
+        <div class="single-job-items mb-30">
+            <div class="job-items d-flex align-items-center">
+                <div class="company-img" style="flex-shrink: 0;">
+                    <a href="#"><img src="saudeealegria.jpg" alt="" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;"></a>
+                </div>
+                <div class="job-tittle" style="margin-left: 20px;">
+                    <a href="https://saudeealegria.org.br/saude-comunitaria/agua-e-saneamento/"><h4>Água e Saneamento | Projeto Saúde & Alegria </h4></a>
+                    <ul>
+                        <li>psa@saudeealegria.org.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Santarém - PA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <!-- single-job-content -->
+        <div class="single-job-items  mb-30">
+            <div class="job-items d-flex align-items-center">
+                <div class="company-img" style="flex-shrink: 0;">
+                    <a href="#"><img src="aguascaminho.jpg" alt="" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;"></a>
+                </div>
+                <div class="job-tittle" style="margin-left: 20px;">
+                    <a href="https://caminhodasaguas.org.br/"><h4>ONG Caminho das Águas</h4></a>
+                    <ul>
+                        <li>contato@caminhodasaguas.com.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Itu - SP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <!-- single-job-content -->
+        <div class="single-job-items mb-30">
+            <div class="job-items d-flex align-items-center">
+                <div class="company-img" style="flex-shrink: 0;">
+                    <a href="#"><img src="ciliosdojaguaribe.png" alt="" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;"></a>
+                </div>
+                <div class="job-tittle" style="margin-left: 20px;">
+                    <a href="https://www.sema.ce.gov.br/2024/07/22/sema-apresenta-projeto-cilios-do-jaguaribe-ao-comite-da-sub-bacia-hidrografica-do-rio-jaguaribe/"><h4>Projeto Cílios do Jaguaribe</h4></a>
+                    <ul>
+                        <li>cearamaisverde@sema.ce.gov.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Fortaleza - CE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4">
+        <!-- single-job-content -->
+        <div class="single-job-items mb-30">
+            <div class="job-items d-flex align-items-center">
+                <div class="company-img" style="flex-shrink: 0;">
+                    <a href="#"><img src="pactoglobal.png" alt="" style="width: 120px; height: 120px; object-fit: cover; border-radius: 8px;"></a>
+                </div>
+                <div class="job-tittle" style="margin-left: 20px;">
+                    <a href="https://www.pactoglobal.org.br/noticia/movimento-agua-lanca-painel-digital-inedito-para-medir-impactos-nas-bacias-hidrograficas-do-pais/"><h4>Movimento Água - Pacto Global</h4></a>
+                    <ul>
+                        <li>agua@pactoglobal.org.br</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Rede Brasil</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Featured_job_end -->
+    </main>
+    <footer>
+        <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer_bg.png">
+            <!-- Footer Top-->
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-30">
+                                    <div class="footer-tittle">
+                                        <div class="footer-logo mb-20">
+                                            <a href="index.html"><img src="logoGOTA3.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Informações para Contato</h4>
+                                    <ul>
+                                        <li>
+                                            <p>Endereço: Conj. Hab. Dr. Abelardo Filho, Aracati - CE, 62800-000. Instituto Federal de Educação, Ciência e Tecnologia do Ceará - Campus Aracati</p>
+                                        </li>
+                                        <li><a href="#">Telefone: (88) 3303-1200</a></li>
+                                        <li><a href="#">Email: recepcao.aracati@ifce.edu.br</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Notícias</h4>
+                                    <ul>
+                                        <li><a href="https://ondasbrasil.org/cartilha-agua-saneamento-e-higiene-alem-do-domicilio/?gad_source=1"> Água, saneamento e higiene no Brasil</a></li>
+                                        <li><a href="https://www.cagece.com.br/comunicacao/noticias/cagece-inicia-obras-de-padronizacao-da-rede-de-agua-em-tiangua-com-investimento-de-mais-de-r-6-milhoes/">Cagece inicia obras de padronização da rede de água em Tianguá com investimento de mais de R$ 6 milhões</a></li>
+                                        <li><a href="https://www.cagece.com.br/comunicacao/noticias/estudante-de-fortaleza-e-premiada-com-o-1-lugar-nacional-nas-olimpiadas-da-agua/">Estudante de Fortaleza é premiada com o 1° lugar nacional nas Olimpíadas da Água</a></li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Doação</h4>
+                                    <div class="footer-pera footer-pera2">
+                                    <p>Quer ajudar e não sabe como começar? Envie suas dúvidas aqui!</p>
+                                </div>
+                                <!-- Form -->
+                                <div class="footer-form" >
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                        method="get" class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
+                                            class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = ' Email Address '">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                class="email_icon newsletter-submit button-contactForm"><img src="assets/img/gallery/form.png" alt=""></button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-bottom -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-xl-10 col-lg-9 ">
+                                <div class="footer-copy-right">
+                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="footer-social f-right">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+function logout() {
+    localStorage.removeItem("logado");
+    window.location.href = "login.html";
+}
+</script>
+    
+    </body>
+</html>
