@@ -130,12 +130,15 @@ async function login() {
 
     const texto = await req.text();
 
-    if (req.ok) {
-        // Login bem-sucedido pelo backend
-        window.location.href = "index.html";
-    } else {
-        alert(texto); // Mostra "Nome ou senha incorretos!"
+    // O backend redireciona automaticamente quando o login dá certo.
+    // Se houver redirecionamento, req.redirected será TRUE.
+    if (req.redirected) {
+        window.location.href = req.url;
+        return;
     }
+
+    // Se chegou aqui, login falhou
+    alert(texto);
 }
 </script>
 
