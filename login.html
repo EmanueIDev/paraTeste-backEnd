@@ -128,31 +128,15 @@ async function login() {
         body: dados
     });
 
-    const res = await req.text();
+    const texto = await req.text();
 
-    if (res === "OK") {
-        window.location.href = "index.html"; // ou quiz.html
+    if (req.ok) {
+        // Login bem-sucedido pelo backend
+        window.location.href = "index.html";
     } else {
-        alert("Nome ou senha incorretos!");
+        alert(texto); // Mostra "Nome ou senha incorretos!"
     }
 }
-
-
-    function login() {
-        const nome = document.getElementById("nome").value;
-        const senha = document.getElementById("senha").value;
-
-        if (!nome || !senha) {
-            alert("Preencha todos os campos!");
-            return;
-        }
-
-        // Marca que está logado
-        localStorage.setItem("logado", "true");
-
-        // Redireciona para página inicial
-        window.location.href = "index.html";
-    }
 </script>
 
 </body>
